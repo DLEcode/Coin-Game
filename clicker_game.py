@@ -30,7 +30,7 @@ Leopards = Pet("Leap of Leopards", 60000)
 Tigers = Pet("Streak of Tigers", 70000)
 Alligators = Pet("Congregation of Alligator", 80000)
 Scorpions = Pet("Bed of Scorpions", 90000)
-Rhinoceroses = Pet("Crash of Rhinoceros", 100000)
+Rhinoceroses = Pet("Crash of Rhinoceroses", 100000)
 pets_list = (Wasp, Bunny, Rabbit, Mole, Fox, Penguin, Cat, Dog, Fast_Bunny, Fast_Rabbit, Fast_Mole, Fast_Fox, Fast_Dog, Elephant, Leopard, Tiger, Alligator, Scorpion, Rhinoceros, Wasps, Elephants, Leopards, Tigers, Alligators, Scorpions, Rhinoceroses)
 #pets_dictionary = (1:Wasp, 2:Bunny, 3:Rabbit, 4:Mole, 5:Fox, 6:Penguin, 7:Cat, 8:Dog, 9:Fast_Bunny, 10:Fast_Rabbit, 11:Fast_Mole, 12:Fast_Fox, 13:Fast_Dog, 14:Elephant, 15:Leopard, 16:Tiger, 17:Alligator, 18:Scorpion, 19:Rhinoceros, 20:Wasps, 21:Elephants, 22:Leopards, 23:Tigers, 24:Alligators, 25:Scorpions, 26:Rhinoceroses)
 while True:
