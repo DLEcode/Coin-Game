@@ -2,17 +2,17 @@ from clicker import Pet
 import time as t
 print("***********************************************************************************************")
 print("Hello, in this game, you get coins every time you type.Your aim is to get the most coins, and you need to buy more pets or multipliers in order to do so. The pets are able to give you more coins: the higher the multiplier of the pet, the more coins you get, and the more expensive it costs. The multipliers multiply your total money outcome every second by a fixed amount, they cost money.")
-print("To get to the shop, press 's'\nto find out your coins, press 'c'\nto see your pets, press 'p'\nto see activated/equipped pets, press 'a'\nto see income, press 'i'\nto buy pets, press 'b', and then type the name when asked to do so.")
+print("to get to the shop, press 's'\nto find out your coins, press 'c'\nto see your pets, press 'p'\nto see activated/equipped pets, press 'a'\nto see income, press 'i'\nto buy pets, press 'b', and then type the name when asked to do so.")
 coins = 0
 pets_list = ["Wasp", "Bunny", "Rabbit", "Mole", "Fox", "Penguin", "Cat", "Dog", "Fast_Bunny", "Fast_Rabbit", "Fast_Mole", "Fast_Fox", "Fast_Cat", "Fast_Dog", "Elephant", "Leopard", "Tiger", "Alligator", "Scorpion", "Rhinoceros", "Wasps", "Elephants", "Leopards", "Tigers", "Alligators", "Scorpions", "Rhinoceroses"]
-for item in pets_list:
-    print("{}_list = []".format(item))
+#for item in pets_list:
+#    print("{}_list = []".format(item))
 coins = 0
 Wasp = Pet("wasp", 2.5, 10)
 Bunny = Pet("bunny", 5, 60)
 Rabbit = Pet("rabbit", 7.5, 100)
 Mole = Pet("mole", 10, 1000)
-Fox = Pet("fox", 12.5, 1500)
+Fox = Pet("fox", 12.5, 1500)                 #this list is for a 'reference' for price and multiplier
 Penguin = Pet("penguin", 15, 2000)
 Cat = Pet("cat", 17.5, 3000)
 Dog = Pet("dog", 20, 5000)
@@ -194,5 +194,7 @@ while True:
                 
     elif Input.lower() == 'c' or Input.lower() == 'coins':
         print(coins)
+    elif Input.lower() == 'i' or Input.lower() == 'income':
+        print #print the total of all equipped pets
     else:
         print("Please type in something suitable.")
