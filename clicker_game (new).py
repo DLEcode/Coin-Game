@@ -1,12 +1,12 @@
 from clicker import Pet
 import time as t
 print("***********************************************************************************************")
-print("Hello, in this game, you get coins every time you type.Your aim is to get the most coins, and you need to buy more pets or multipliers in order to do so. The pets are able to give you more coins: the higher the multiplier of the pet, the more coins you get, and the more expensive it costs. The multipliers multiply your total money outcome every second by a fixed amount, they cost money.")
+print("Hello, in this game you get coins every time you type.Your aim is to get the most coins, and you need to buy more pets or multipliers in order to do so. The pets are able to give you more coins: the higher the multiplier of the pet, the more coins you get, and the more expensive it is. The multipliers multiply your total money outcome every second by a fixed amount.")
 print("to get to the shop, press 's'\nto find out your coins, press 'c'\nto see your pets, press 'p'\nto see activated/equipped pets, press 'a'\nto see income, press 'i'\nto buy pets, press 'b', and then type the name when asked to do so.")
 coins = 0
 pets_list = ["Wasp", "Bunny", "Rabbit", "Mole", "Fox", "Penguin", "Cat", "Dog", "Fast_Bunny", "Fast_Rabbit", "Fast_Mole", "Fast_Fox", "Fast_Cat", "Fast_Dog", "Elephant", "Leopard", "Tiger", "Alligator", "Scorpion", "Rhinoceros", "Wasps", "Elephants", "Leopards", "Tigers", "Alligators", "Scorpions", "Rhinoceroses"]
-#for item in pets_list:
-#    print("{}_list = []".format(item))
+for item in pets_list:
+    print("{}_list".format(item))
 coins = 0
 Wasp = Pet("wasp", 2.5, 10)
 Bunny = Pet("bunny", 5, 60)
@@ -196,5 +196,6 @@ while True:
         print(coins)
     elif Input.lower() == 'i' or Input.lower() == 'income':
         print #print the total of all equipped pets
-    else:
+    elif Input.lower() == 'p':
+        print(Wasp_list Bunny_list Rabbit_list Mole_list Fox_list Penguin_list Cat_list Dog_list Fast_Bunny_list Fast_Rabbit_list Fast_Mole_list Fast_Fox_list Fast_Cat_list Fast_Dog_list Elephant_list Leopard_list Tiger_list Alligator_list Scorpion_list Rhinoceros_list Wasps_list Elephants_listLeopards_list Tigers_list Alligators_list Scorpions_list Rhinoceroses_list)
         print("Please type in something suitable.")
