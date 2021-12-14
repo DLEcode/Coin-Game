@@ -68,7 +68,7 @@ Scorpions_list = []
 Rhinoceroses_list = []
 
 while True:
-    coins =+ 1
+    coins = coins + 1
     Input = input("")
     if Input.lower() == 'b' or Input.lower() == 'buy':
         Input = input("Please type the name of the pet you would like to buy: ")
@@ -76,11 +76,13 @@ while True:
         x = int(number_of_pets)
         for item in pets_list:
             if Input.lower() == item.lower():
-                    while x > 0:
+                    while x > 0 and coins >= 0:
                         if pets_list.index(item) == 0 and coins >= Wasp.cost:
                             pet = Wasp("pet")
                             Wasp_list.append(pet)
                             x = x - 1
+                            coins = coins - Wasp.cost
+                            print("Pet bought!")
                         elif pets_list.index(item) == 1 and coins >= Bunny.cost:
                             pet = Bunny("pet")
                             Bunny_list.append(pet)
@@ -186,9 +188,9 @@ while True:
                             Rhinoceroses_list.append(pet)
                             x = x - 1
                         else:
-                            print("ERROR")
+                            print("ERROR...")
             else:
-                print("ERROR")
+                print("ERROR..")
     elif Input == 's' or Input == 'shop':
         print(pet_stats)
                 
@@ -197,5 +199,7 @@ while True:
     elif Input.lower() == 'i' or Input.lower() == 'income':
         print #print the total of all equipped pets
     elif Input.lower() == 'p':
-        print(Wasp_list Bunny_list Rabbit_list Mole_list Fox_list Penguin_list Cat_list Dog_list Fast_Bunny_list Fast_Rabbit_list Fast_Mole_list Fast_Fox_list Fast_Cat_list Fast_Dog_list Elephant_list Leopard_list Tiger_list Alligator_list Scorpion_list Rhinoceros_list Wasps_list Elephants_listLeopards_list Tigers_list Alligators_list Scorpions_list Rhinoceroses_list)
+        print(Wasp_list, Bunny_list, Rabbit_list, Mole_list, Fox_list, Penguin_list, Cat_list, Dog_list, Fast_Bunny_list, Fast_Rabbit_list, Fast_Mole_list, Fast_Fox_list, Fast_Cat_list, Fast_Dog_list, Elephant_list, Leopard_list, Tiger_list, Alligator_list, Scorpion_list, Rhinoceros_list, Wasps_list, Elephants_list, Leopards_list, Tigers_list, Alligators_list, Scorpions_list, Rhinoceroses_list)
         print("Please type in something suitable.")
+    else:
+        continue
