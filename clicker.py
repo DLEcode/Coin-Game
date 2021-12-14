@@ -1,10 +1,10 @@
 class Pet:
 
-    def __init__(self, name, multiplier, cost):
+    def __init__(self, name, extracoins, cost):
         self.name = name
         self.active = False
         self.owned = False
-        self.multiplier = multiplier
+        self.extracoins = extracoins
         self.cost = cost
 """    
     def buy(self):
@@ -17,98 +17,98 @@ class Pet:
             print("This pet is not owned.")
 
 """          
-class Wasp:
+class Wasp_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 2.5
+        self.extracoins = 2.5
         self.active = False
         self.owned = False
         self.cost = 10
         
-class Bunny:
+class Bunny_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 5
+        self.extracoins = 5
         self.active = False
         self.owned = False
         self.cost = 60
 
-class Rabbit:
+class Rabbit_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 7.5
+        self.extracoins = 7.5
         self.active = False
         self.owned = False
         self.cost = 100
         
-class Mole:
+class Mole_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 10
+        self.extracoins = 10
         self.active = False
         self.owned = False
         self.cost = 1000
         
-class Fox:
+class Fox_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 12.5
+        self.extracoins = 12.5
         self.active = False
         self.owned = False
         self.cost = 1500
         
-class Penguin:
+class Penguin_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 15
+        self.extracoins = 15
         self.active = False
         self.owned = False
         self.cost = 2000
 
-class Cat:
+class Cat_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 17.5
+        self.extracoins = 17.5
         self.active = False
         self.owned = False
         self.cost = 3000
 
-class Dog:
+class Dog_object_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 20
+        self.extracoins = 20
         self.active = False
         self.owned = False
         self.cost = 5000
         
-class Fast_Bunny:
+class Fast_Bunny_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 50
+        self.extracoins = 50
         self.active = False
         self.owned = False
         self.cost = 6000
         
-class Fast_Rabbit:
+class Fast_Rabbit_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 75
+        self.extracoins = 75
         self.active = False
         self.owned = False
         self.cost = 20000
         
-class Fast_Mole:
+class Fast_Mole_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 100
+        self.extracoins = 100
         self.active = False
         self.owned = False
         self.cost = 100000
 
-class Fast_Fox:
+class Fast_Fox_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 125
+        self.extracoins = 125
         self.active = False
         self.owned = False
         self.cost = 150000
@@ -116,135 +116,127 @@ class Fast_Fox:
 class Fast_Penguin:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 150
+        self.extracoins = 150
         self.active = False
         self.owned = False
         self.cost = 300000
         
-class Fast_Cat:
+class Fast_Cat_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 175
+        self.extracoins = 175
         self.active = False
         self.owned = False
         self.cost = 500000
         
-class Fast_Dog:
+class Fast_Dog_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 200
+        self.extracoins = 200
         self.active = False
         self.owned = False
         self.cost = 1000000
         
-class Elephant:
+class Elephant_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 50
+        self.extracoins = 50
         self.active = False
         self.owned = False
         self.cost = 6000
         
-class Leopard:
+class Leopard_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 60
+        self.extracoins = 60
         self.active = False
         self.owned = False
         self.cost = 8000
 
-class Tiger:
+class Tiger_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 70
+        self.extracoins = 70
         self.active = False
         self.owned = False
         self.cost = 15000
 
-class Alligator:
+class Alligator_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 80
+        self.extracoins = 80
         self.active = False
         self.owned = False
         self.cost = 60000
 
-class Scorpion:
+class Scorpion_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 90
+        self.extracoins = 90
         self.active = False
         self.owned = False
         self.cost = 80000
 
-class Rhinoceros:
+class Rhinoceros_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 100
+        self.extracoins = 100
         self.active = False
         self.owned = False
         self.cost = 100000
 
-class Wasps:
+class Wasps_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 25000
+        self.extracoins = 25000
         self.active = False
         self.owned = False
         self.cost = 10000000
 
-class Elephants:
+class Elephants_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 500000
+        self.extracoins = 500000
         self.active = False
         self.owned = False
         self.cost = 20000000
 
-class Leopards:
+class Leopards_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 6000000
+        self.extracoins = 6000000
         self.active = False
         self.owned = False
         self.cost = 300000000
 
-class Tigers:
+class Tigers_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 70000000
+        self.extracoins = 70000000
         self.active = False
         self.owned = False
         self.cost = 4000000000
 
-class Alligators:
+class Alligators_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 800000000
+        self.extracoins = 800000000
         self.active = False
         self.owned = False
         self.cost = 80000000000
 
-class Scorpions:
+class Scorpions_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 90000000000
+        self.extracoins = 90000000000
         self.active = False
         self.owned = False
         self.cost = 3000000000000
         
-class Rhinoceroses:
+class Rhinoceroses_object:
     def __init__(self, name):
         self.name = name
-        self.multiplier = 10000000000000
+        self.extracoins = 10000000000000
         self.active = False
         self.owned = False
         self.cost = 100000000000000000
-
-
-
-
-
-
-
-        
