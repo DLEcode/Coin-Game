@@ -7,7 +7,8 @@ Good luck!
 notes:
 
 currently the 'e' or 'equip' command is only working for any pet of class Wasp_object
-also, the 'p' or 'pets command is not working as wanted
+also, the 'p' or 'pets' command is not working as wanted
+also, the 'a' or 'active' command has not been made in the updated version (clicker_game (new))
 
 ***********************************
 
