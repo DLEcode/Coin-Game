@@ -89,6 +89,8 @@ Rhinoceroses = Pet("crash of rhinoceroses", 10000000000000, 100000000000000000)
 pet_stats = [Wasp, Bunny, Rabbit, Mole, Fox, Penguin, Cat, Dog, Fast_Bunny, Fast_Rabbit, Fast_Mole, Fast_Fox, Fast_Dog, Elephant, Leopard, Tiger, Alligator, Scorpion, Rhinoceros, Wasps, Elephants, Leopards, Tigers, Alligators, Scorpions, Rhinoceroses]
 
 total_list = []
+equipped_pets = []
+
 Wasp_list = []
 Bunny_list = []
 Rabbit_list = []
@@ -128,164 +130,164 @@ while True:
             if Input.lower() == item.lower():
                     while x > 0 and coins >= 0:
                         if pets_list.index(item) == 0 and coins >= Wasp.cost:
-                            pet = Wasp_("pet")
+                            pet = Wasp_("Wasp")
                             Wasp_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Wasp.cost   #using as reference for cost
                             print("Pet bought!")
                         elif pets_list.index(item) == 1 and coins >= Bunny.cost:
-                            pet = Bunny_("pet")
+                            pet = Bunny_("Bunny")
                             Bunny_list.append(pet)
                             total_list.append(pet)
                             x = x - 1     
                             coins = coins - Bunny.cost
                         elif pets_list.index(item) == 2 and coins >= Rabbit.cost:
-                            pet = Rabbit_("pet")
+                            pet = Rabbit_("Rabbit")
                             Rabbit_list.append(pet)
                             total_list.append(pet)
                             x = x - 1     
                             coins = coins - Rabbit.cost                                         
                         elif pets_list.index(item) == 3 and coins >= Mole.cost:
-                            pet = Mole_("pet")
+                            pet = Mole_("Mole")
                             Mole_list.append(pet)
                             total_list.append(pet)
                             x = x - 1              
                             coins = coins - Mole.cost 
                         elif pets_list.index(item) == 4 and coins >= Fox.cost:
-                            pet = Fox_("pet")
+                            pet = Fox_("Fox")
                             Fox_list.append(pet)
                             total_list.append(pet)
                             x = x - 1               
                             coins = coins - Penguin.cost 
                         elif pets_list.index(item) == 5 and coins >= Penguin.cost:
-                            pet = Penguin_("pet")
+                            pet = Penguin_("Penguin")
                             Penguin_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                      
                             coins = coins - Penguin.cost 
                         elif pets_list.index(item) == 6 and coins >= Cat.cost:
-                            pet = Cat_("pet")
+                            pet = Cat_("Cat")
                             Cat_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Cat.cost 
                         elif pets_list.index(item) == 7 and coins >= Dog.cost:
-                            pet = Dog_("pet")
+                            pet = Dog_("Dog")
                             Dog_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Dog.cost 
                         elif pets_list.index(item) == 8 and coins >= Fast_Bunny.cost:
-                            pet = Fast_Bunny_("pet")
+                            pet = Fast_Bunny_("Fast Bunny")
                             Fast_Bunny_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Fast_Bunny.cost 
                         elif pets_list.index(item) == 9 and coins >= Fast_Rabbit.cost:
-                            pet = Fast_Rabbit_("pet")
+                            pet = Fast_Rabbit_("Fast Rabbit")
                             Fast_Rabbit_list.append(pet)
                             total_list.append(pet)
                             x = x - 1             
                             coins = coins - Fast_Rabbit.cost 
                         elif pets_list.index(item) == 10 and coins >= Fast_Mole.cost:
-                            pet = Fast_Mole_("pet")
+                            pet = Fast_Mole_("Fast Mole")
                             Fast_Mole_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Fast_Mole.cost 
                         elif pets_list.index(item) == 11 and coins >= Fast_Fox.cost:
-                            pet = Fast_Fox_("pet")
+                            pet = Fast_Fox_("Fast Fox")
                             Fast_Fox_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Fast_Fox.cost 
                         elif pets_list.index(item) == 12 and coins >= Fast_Cat.cost:
-                            pet = Fast_Cat_("pet")
+                            pet = Fast_Cat_("Fast Cat")
                             Fast_Cat_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Fast_Cat.cost 
                         elif pets_list.index(item) == 13 and coins >= Fast_Dog.cost:
-                            pet = Fast_Dog_("pet")
+                            pet = Fast_Dog_("Fast Dog")
                             Fast_Dog_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Fast_Dog.cost 
                         elif pets_list.index(item) == 14 and coins >= Elephant.cost:
-                            pet = Elephant_("pet")
+                            pet = Elephant_("Elephant")
                             Elephant_list.append(pet)
                             total_list.append(pet)
                             x = x - 1                       
                             coins = coins - Elephant.cost 
                         elif pets_list.index(item) == 15 and coins >= Leopard.cost:
-                            pet = Leopard_("pet")
+                            pet = Leopard_("Leopard")
                             Leopard_list.append(pet)
                             total_list.append(pet)
                             x = x - 1            
                             coins = coins - Leopard.cost 
                         elif pets_list.index(item) == 16 and coins >= Tiger.cost:
-                            pet = Tiger_("pet")
+                            pet = Tiger_("Tiger")
                             Tiger_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Tiger.cost 
                         elif pets_list.index(item) == 17 and coins >= Alligator.cost:
-                            pet = Alligator_("pet")
+                            pet = Alligator_("Alligator")
                             Alligator_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Alligator.cost 
                         elif pets_list.index(item) == 18 and coins >= Scorpion.cost:
-                            pet = Scorpion_object("pet")
+                            pet = Scorpion_object("Scorpion")
                             Scorpion_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Scorpion.cost 
                         elif pets_list.index(item) == 19 and coins >= Rhinoceros.cost:
-                            pet = Rhinoceros_("pet")
+                            pet = Rhinoceros_("Rhinoceros")
                             Rhinoceros_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Rhinoceros.cost 
                         elif pets_list.index(item) == 20 and coins >= Wasps.cost:
-                            pet = Wasps_("pet")
+                            pet = Wasps_("Swarm of Wasps")
                             Wasps_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Wasps.cost 
                         elif pets_list.index(item) == 21 and coins >= Elephants.cost:
-                            pet = Elephants_("pet")
+                            pet = Elephants_("Herd of Elephants")
                             Elephants_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Elephants.cost 
                         elif pets_list.index(item) == 22 and coins >= Leopards.cost:
-                            pet = Leopards_("pet")
+                            pet = Leopards_("Leap of Leopards")
                             Leopards_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Leopards.cost 
                         elif pets_list.index(item) == 23 and coins >= Tigers.cost:
-                            pet = Tigers_("pet")
+                            pet = Tigers_("Streak of Tigers")
                             Tigers.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Tigers.cost 
                         elif pets_list.index(item) == 24 and coins >= Alligators.cost:
-                            pet = Alligators_(pet)
+                            pet = Alligators_("Congregation of Alligators")
                             Alligators_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Alligators.cost 
                         elif pets_list.index(item) == 25 and coins >= Scorpions.cost:
-                            pet = Scorpions_("pet")
+                            pet = Scorpions_("Bed of Scorpions")
                             Scorpions_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
                             coins = coins - Scorpions.cost 
                         elif pets_list.index(item) == 26 and coins >= Rhinoceroses.cost:
-                            pet = Rhinoceroses_("pet")
+                            pet = Rhinoceroses_("Crash of Rhinoceroses")
                             Rhinoceroses_list.append(pet)
                             total_list.append(pet)
                             x = x - 1
@@ -301,7 +303,10 @@ while True:
     elif Input.lower() == 'c' or Input.lower() == 'coins':
         print(coins)
     elif Input.lower() == 'i' or Input.lower() == 'income':
-        print #print the total of all equipped pets
+        x = 0
+        for item in equipped_pets:
+            x = x + item.extra-coins
+            print(x)
     elif Input.lower() == 'p' or Input.lower() == 'pets':
         print(Wasp_list, Bunny_list, Rabbit_list, Mole_list, Fox_list, Penguin_list, Cat_list, Dog_list, Fast_Bunny_list, Fast_Rabbit_list, Fast_Mole_list, Fast_Fox_list, Fast_Cat_list, Fast_Dog_list, Elephant_list, Leopard_list, Tiger_list, Alligator_list, Scorpion_list, Rhinoceros_list, Wasps_list, Elephants_list, Leopards_list, Tigers_list, Alligators_list, Scorpions_list, Rhinoceroses_list)
     elif Input.lower() == 'e' or Input.lower == 'equip':
@@ -309,13 +314,17 @@ while True:
         number_of_pets = input("Please type in the number of that pet you would like to equip: ")
         x = int(number_of_pets)
         for item in total_list:
-            while x >= 0:
+            while x > 0:
                 if Input.lower() == "wasp":
                     for item in Wasp_list:
                         item.active = True
                         print("Wasp is equipped!")
+                        equipped_pets.append(item)
                         x = x - 1
                 else:
                     continue
+    elif Input.lower() == 'a' or Input.lower() == 'activated':
+        for item in equipped_pets:
+            print(item.name)
     else:
-        print("Please type in something suitable.")
+        print("Type type type!")
